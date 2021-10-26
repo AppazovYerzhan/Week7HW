@@ -128,29 +128,29 @@ Week7HW/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Week7HW.dir\build.make CMakeFiles/Week7HW.dir/build
 .PHONY : Week7HW/fast
 
-Game.obj: Game.cpp.obj
-.PHONY : Game.obj
+Environment.obj: Environment.cpp.obj
+.PHONY : Environment.obj
 
 # target to build an object file
-Game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Week7HW.dir\build.make CMakeFiles/Week7HW.dir/Game.cpp.obj
-.PHONY : Game.cpp.obj
+Environment.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Week7HW.dir\build.make CMakeFiles/Week7HW.dir/Environment.cpp.obj
+.PHONY : Environment.cpp.obj
 
-Game.i: Game.cpp.i
-.PHONY : Game.i
+Environment.i: Environment.cpp.i
+.PHONY : Environment.i
 
 # target to preprocess a source file
-Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Week7HW.dir\build.make CMakeFiles/Week7HW.dir/Game.cpp.i
-.PHONY : Game.cpp.i
+Environment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Week7HW.dir\build.make CMakeFiles/Week7HW.dir/Environment.cpp.i
+.PHONY : Environment.cpp.i
 
-Game.s: Game.cpp.s
-.PHONY : Game.s
+Environment.s: Environment.cpp.s
+.PHONY : Environment.s
 
 # target to generate assembly for a file
-Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Week7HW.dir\build.make CMakeFiles/Week7HW.dir/Game.cpp.s
-.PHONY : Game.cpp.s
+Environment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Week7HW.dir\build.make CMakeFiles/Week7HW.dir/Environment.cpp.s
+.PHONY : Environment.cpp.s
 
 Player.obj: Player.cpp.obj
 .PHONY : Player.obj
@@ -209,9 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Week7HW
-	@echo ... Game.obj
-	@echo ... Game.i
-	@echo ... Game.s
+	@echo ... Environment.obj
+	@echo ... Environment.i
+	@echo ... Environment.s
 	@echo ... Player.obj
 	@echo ... Player.i
 	@echo ... Player.s

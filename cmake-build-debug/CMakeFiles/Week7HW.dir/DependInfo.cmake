@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/GooseMane/CLionProjects/Week7HW/Game.cpp" "C:/Users/GooseMane/CLionProjects/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir/Game.cpp.obj"
+  "C:/Users/GooseMane/CLionProjects/Week7HW/Environment.cpp" "C:/Users/GooseMane/CLionProjects/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir/Environment.cpp.obj"
   "C:/Users/GooseMane/CLionProjects/Week7HW/Player.cpp" "C:/Users/GooseMane/CLionProjects/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir/Player.cpp.obj"
   "C:/Users/GooseMane/CLionProjects/Week7HW/main.cpp" "C:/Users/GooseMane/CLionProjects/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir/main.cpp.obj"
   )

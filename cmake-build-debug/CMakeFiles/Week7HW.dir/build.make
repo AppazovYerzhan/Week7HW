@@ -91,31 +91,31 @@ CMakeFiles/Week7HW.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Week7HW.dir/Player.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\GooseMane\CLionProjects\Week7HW\Player.cpp -o CMakeFiles\Week7HW.dir\Player.cpp.s
 
-CMakeFiles/Week7HW.dir/Game.cpp.obj: CMakeFiles/Week7HW.dir/flags.make
-CMakeFiles/Week7HW.dir/Game.cpp.obj: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Week7HW.dir/Game.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Week7HW.dir\Game.cpp.obj -c C:\Users\GooseMane\CLionProjects\Week7HW\Game.cpp
+CMakeFiles/Week7HW.dir/Environment.cpp.obj: CMakeFiles/Week7HW.dir/flags.make
+CMakeFiles/Week7HW.dir/Environment.cpp.obj: ../Environment.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Week7HW.dir/Environment.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Week7HW.dir\Environment.cpp.obj -c C:\Users\GooseMane\CLionProjects\Week7HW\Environment.cpp
 
-CMakeFiles/Week7HW.dir/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Week7HW.dir/Game.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\GooseMane\CLionProjects\Week7HW\Game.cpp > CMakeFiles\Week7HW.dir\Game.cpp.i
+CMakeFiles/Week7HW.dir/Environment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Week7HW.dir/Environment.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\GooseMane\CLionProjects\Week7HW\Environment.cpp > CMakeFiles\Week7HW.dir\Environment.cpp.i
 
-CMakeFiles/Week7HW.dir/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Week7HW.dir/Game.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\GooseMane\CLionProjects\Week7HW\Game.cpp -o CMakeFiles\Week7HW.dir\Game.cpp.s
+CMakeFiles/Week7HW.dir/Environment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Week7HW.dir/Environment.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\GooseMane\CLionProjects\Week7HW\Environment.cpp -o CMakeFiles\Week7HW.dir\Environment.cpp.s
 
 # Object files for target Week7HW
 Week7HW_OBJECTS = \
 "CMakeFiles/Week7HW.dir/main.cpp.obj" \
 "CMakeFiles/Week7HW.dir/Player.cpp.obj" \
-"CMakeFiles/Week7HW.dir/Game.cpp.obj"
+"CMakeFiles/Week7HW.dir/Environment.cpp.obj"
 
 # External object files for target Week7HW
 Week7HW_EXTERNAL_OBJECTS =
 
 Week7HW.exe: CMakeFiles/Week7HW.dir/main.cpp.obj
 Week7HW.exe: CMakeFiles/Week7HW.dir/Player.cpp.obj
-Week7HW.exe: CMakeFiles/Week7HW.dir/Game.cpp.obj
+Week7HW.exe: CMakeFiles/Week7HW.dir/Environment.cpp.obj
 Week7HW.exe: CMakeFiles/Week7HW.dir/build.make
 Week7HW.exe: CMakeFiles/Week7HW.dir/linklibs.rsp
 Week7HW.exe: CMakeFiles/Week7HW.dir/objects1.rsp

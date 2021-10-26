@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include "ctime"
 
-class Game {
+class Environment {
     typedef struct{
         int *row;
     }List;
@@ -17,10 +17,10 @@ private:
     int emptyCount;
     List list[8];
 public:
-    Game();
+    Environment();
     void display();
     void botInput();
-    void playerInput(Player &player);
+    void playerInput(Player &player, int whichPlayer);
     void checkWin(Player &p1,Player &p2);
     void play(Player &p1,Player &p2);
     void displayScore(Player &p1, Player &p2);

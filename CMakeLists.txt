@@ -3,4 +3,4 @@ project(Week7HW)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Week7HW main.cpp Player.cpp Player.h Game.cpp Game.h)
+add_executable(Week7HW main.cpp Player.cpp Player.h Environment.cpp Environment.h)

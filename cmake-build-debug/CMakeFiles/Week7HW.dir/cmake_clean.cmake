@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Week7HW.dir/Game.cpp.obj"
+  "CMakeFiles/Week7HW.dir/Environment.cpp.obj"
   "CMakeFiles/Week7HW.dir/Player.cpp.obj"
   "CMakeFiles/Week7HW.dir/main.cpp.obj"
   "Week7HW.exe"

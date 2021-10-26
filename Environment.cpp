@@ -1,10 +1,10 @@
-#include "Game.h"
+#include "Environment.h"
 #include "Player.h"
 
 
 class List;
 
-void Game::display() {
+void Environment::display() {
     cout <<endl;
     cout << "   |   |   "<<endl;
     cout << " "<< board[0] <<" | "<<board[1]<<" | "<<board[2]<<endl;
@@ -19,7 +19,7 @@ void Game::display() {
     cout << "   |   |   "<<endl;
     cout <<endl;
 }
-void Game::botInput(){
+void Environment::botInput(){
     int pos;
     pos = rand()%10;
     if(emptyIndex[pos] == 1){
@@ -34,7 +34,7 @@ void Game::botInput(){
     }
 
 }
-void Game::playerInput(Player &player){
+void Environment::playerInput(Player &player, int whichPlayer){
     int pos;
     cout << endl;
     cout << "\t" << player.getName() <<"`s Turn: ";
@@ -43,16 +43,21 @@ void Game::playerInput(Player &player){
     pos -=1;
     if(emptyIndex[pos] == 1){
         cout << "-----Position not empty-------"<< endl;
-        playerInput(player);
+        playerInput(player, whichPlayer);
     } else {
         emptyIndex[pos] = 1;
-        emptyCount= emptyCount - 1;
-        player.getName().compare(player.getName()) == 0 ? board[pos] ='X': board[pos] ='O';
+        emptyCount--;
+        if (whichPlayer == 1){
+            board[pos] ='O';
+        }
+        else{
+            board[pos] ='X';
+        }
     }
 
 }
 
-void Game::checkWin(Player &p1,Player &p2){
+void Environment::checkWin(Player &p1,Player &p2){
     char first_symbol;
     int i,j,k;
     bool flag = false;
@@ -96,7 +101,7 @@ void Game::checkWin(Player &p1,Player &p2){
     }
 }
 
-void Game::play(Player &p1,Player &p2){
+void Environment::play(Player &p1,Player &p2){
     char rematch ='\0';
     int hand = 0;
     gameOn =1;
@@ -104,10 +109,10 @@ void Game::play(Player &p1,Player &p2){
     while((emptyCount > 0) && (gameOn != 0)){
 
         if(againstComputer)
-            hand == 1 ? botInput() : playerInput(p2);
+            hand == 1 ? botInput() : playerInput(p2, 3);
         else
-            hand == 1 ? playerInput(p1): playerInput(p2);
-        hand= !hand;
+            hand == 1 ? playerInput(p1, 1): playerInput(p2, 2);
+         hand= !hand;
         display();
         checkWin(p1,p2);
     }
@@ -126,28 +131,28 @@ void Game::play(Player &p1,Player &p2){
 
 }
 
-void Game::displayScore(Player &p1, Player &p2){
+void Environment::displayScore(Player &p1, Player &p2){
     cout << endl;
     cout << "\t SCORE: \t";
     if(againstComputer)
-        cout<<" Player I: " <<p1.getScore()<<" \t Computer: "<<p2.getScore()<< endl;
+        cout<<" "<<p2.getName()<<": " <<p1.getScore()<<" \t Computer: "<<p2.getScore()<< endl;
     else
-        cout<<" Player I: " <<p1.getScore()<<" \t Player II: "<<p2.getScore()<< endl;
+        cout<<"\t"<<p2.getName()<<": " <<p1.getScore()<<"\t"<<p1.getName()<<": "<<p2.getScore()<< endl;
 }
 
-Game::Game() : emptyCount{0}, gameOn{1}, againstComputer{0}{
+Environment::Environment() : emptyCount{0}, gameOn{1}, againstComputer{0}{
     init();
-    Game::list[0].row = new int[3]{0,1,2};
-    Game::list[1].row = new int[3]{3,4,5};
-    Game::list[2].row = new int[3]{6,7,8};
-    Game::list[3].row = new int[3]{0,3,6};
-    Game::list[4].row = new int[3]{1,4,7};
-    Game::list[5].row = new int[3]{2,5,8};
-    Game::list[6].row = new int[3]{0,4,8};
-    Game::list[7].row = new int[3]{2,4,6};
+    Environment::list[0].row = new int[3]{0,1,2};
+    Environment::list[1].row = new int[3]{3,4,5};
+    Environment::list[2].row = new int[3]{6,7,8};
+    Environment::list[3].row = new int[3]{0,3,6};
+    Environment::list[4].row = new int[3]{1,4,7};
+    Environment::list[5].row = new int[3]{2,5,8};
+    Environment::list[6].row = new int[3]{0,4,8};
+    Environment::list[7].row = new int[3]{2,4,6};
 }
 
-void Game::init(){
+void Environment::init(){
     gameOn = 1;
 
     emptyCount =0;
@@ -160,7 +165,7 @@ void Game::init(){
     emptyCount--;
 }
 
-void Game::onePlayerGame(){
+void Environment::onePlayerGame(){
     //Creating Player
     string p1;
     cin >> p1;
@@ -175,7 +180,7 @@ void Game::onePlayerGame(){
 
 }
 
-void Game::twoPlayerGame(){
+void Environment::twoPlayerGame(){
     //Creating Player
     string p1;
     string p2;
@@ -190,35 +195,35 @@ void Game::twoPlayerGame(){
     againstComputer = 0;
     play(c,p);
 }
-const char *Game::getBoard() const {
+const char *Environment::getBoard() const {
     return board;
 }
 
-const int *Game::getEmptyIndex() const {
+const int *Environment::getEmptyIndex() const {
     return emptyIndex;
 }
 
-int Game::getGameOn() const {
+int Environment::getGameOn() const {
     return gameOn;
 }
 
-void Game::setGameOn(int gameOn) {
-    Game::gameOn = gameOn;
+void Environment::setGameOn(int gameOn) {
+    Environment::gameOn = gameOn;
 }
 
-int Game::getAgainstComputer() const {
+int Environment::getAgainstComputer() const {
     return againstComputer;
 }
 
-void Game::setAgainstComputer(int againstComputer) {
-    Game::againstComputer = againstComputer;
+void Environment::setAgainstComputer(int againstComputer) {
+    Environment::againstComputer = againstComputer;
 }
 
-int Game::getEmptyCount() const {
+int Environment::getEmptyCount() const {
     return emptyCount;
 }
 
-void Game::setEmptyCount(int emptyCount) {
-    Game::emptyCount = emptyCount;
+void Environment::setEmptyCount(int emptyCount) {
+    Environment::emptyCount = emptyCount;
 }
 

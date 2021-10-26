@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Game.h"
+#include "Environment.h"
 
 int main() {
     int ch;
@@ -13,13 +13,13 @@ int main() {
         cin >> ch;
         switch(ch){
             case 1:{
-                Game *game = new Game;
+                Environment *game = new Environment;
                 game->init();
                 game->onePlayerGame();
             }
                 break;
             case 2:{
-                Game *game = new Game;
+                Environment *game = new Environment;
                 game->init();
                 game->twoPlayerGame();
             }
