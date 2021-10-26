@@ -159,7 +159,8 @@ void Environment::init(){
     srand(time(NULL));
     for(int i=0; i<10; i++){
         emptyIndex[i] = 0;
-        board[i] = (i+1) +'0';
+//        board[i] = (i+1) +'0';
+        board[i] = ' ';
         emptyCount++;
     }
     emptyCount--;
