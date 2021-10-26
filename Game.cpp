@@ -37,7 +37,7 @@ void Game::botInput(){
 void Game::playerInput(Player &player){
     int pos;
     cout << endl;
-    cout << "\t" << player.getName() <<" Turn: ";
+    cout << "\t" << player.getName() <<"`s Turn: ";
     cout <<"\t Enter the position " << endl;
     cin >> pos;
     pos -=1;
@@ -75,20 +75,19 @@ void Game::checkWin(Player &p1,Player &p2){
             gameOn = 0;
             if(first_symbol == 'X'){
                 cout << "-----------------------"<< endl;
-                cout << "\t Player I WON"<< endl;
+                cout <<"\t"<< p2.getName()<<" WON!"<< endl;
                 cout << "-----------------------"<< endl;
                 p1.won();
             } else {
                 p2.won();
                 if(againstComputer){
                     cout << "-----------------------"<< endl;
-                    cout << "\t Computer WON"<< endl;
+                    cout << "\t Even Computer without logic WON You"<< endl;
                     cout << "-----------------------"<< endl;
                 } else {
                     cout << "-----------------------"<< endl;
-                    cout << "\t Player II WON"<< endl;
+                    cout <<"\t"<<p2.getName()<<" WON!"<< endl;
                     cout << "-----------------------"<< endl;
-
                 }
             }
             displayScore(p1,p2);
@@ -114,13 +113,13 @@ void Game::play(Player &p1,Player &p2){
     }
     if (emptyCount <=0){
         cout << "      -----------------------"<< endl;
-        cout << "\t No WINNER"<< endl;
+        cout << "\t No WINNERS"<< endl;
         cout << "      -----------------------"<< endl;
     }
     cout<< endl;
     cout << "Rematch Y/N: ";
     cin >> rematch;
-    if((rematch == 'Y')||(rematch == 'y')){
+    if((rematch == 'Y')||(rematch == 'y')||(rematch == 'yes')){
         init();
         play(p1,p2);
     }
@@ -136,24 +135,24 @@ void Game::displayScore(Player &p1, Player &p2){
         cout<<" Player I: " <<p1.getScore()<<" \t Player II: "<<p2.getScore()<< endl;
 }
 
-emptyCount{0}, gameOn{1}, againstComputer{0}{
+Game::Game() : emptyCount{0}, gameOn{1}, againstComputer{0}{
     init();
-    winlist[0].row = new int[3]{0,1,2};
-    winlist[1].row = new int[3]{3,4,5};
-    winlist[2].row = new int[3]{6,7,8};
-    winlist[3].row = new int[3]{0,3,6};
-    winlist[4].row = new int[3]{1,4,7};
-    winlist[5].row = new int[3]{2,5,8};
-    winlist[6].row = new int[3]{0,4,8};
-    winlist[7].row = new int[3]{2,4,6};
+    Game::list[0].row = new int[3]{0,1,2};
+    Game::list[1].row = new int[3]{3,4,5};
+    Game::list[2].row = new int[3]{6,7,8};
+    Game::list[3].row = new int[3]{0,3,6};
+    Game::list[4].row = new int[3]{1,4,7};
+    Game::list[5].row = new int[3]{2,5,8};
+    Game::list[6].row = new int[3]{0,4,8};
+    Game::list[7].row = new int[3]{2,4,6};
 }
 
 void Game::init(){
     gameOn = 1;
 
     emptyCount =0;
-    srand(time(0));
-    for(size_t i=0; i<10; i++){
+    srand(time(NULL));
+    for(int i=0; i<10; i++){
         emptyIndex[i] = 0;
         board[i] = (i+1) +'0';
         emptyCount++;
@@ -223,6 +222,3 @@ void Game::setEmptyCount(int emptyCount) {
     Game::emptyCount = emptyCount;
 }
 
-const List *Game::getlist() const {
-    return list;
-}
