@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "F:\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "F:\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\GooseMane\CLionProjects\Week7HW
+CMAKE_SOURCE_DIR = F:\Clionprojectsnew\Week7HW
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug
+CMAKE_BINARY_DIR = F:\Clionprojectsnew\Week7HW\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/Week7HW.dir/clean
 CMakeFiles/Week7HW.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Week7HW.dir\build.make CMakeFiles/Week7HW.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Week7HW.dir\build.make CMakeFiles/Week7HW.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target Week7HW"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Clionprojectsnew\Week7HW\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target Week7HW"
 .PHONY : CMakeFiles/Week7HW.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Week7HW.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Clionprojectsnew\Week7HW\cmake-build-debug\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Week7HW.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Clionprojectsnew\Week7HW\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Week7HW.dir/rule
 
 # Convenience name for target.

@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "F:\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "F:\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\GooseMane\CLionProjects\Week7HW
+CMAKE_SOURCE_DIR = F:\Clionprojectsnew\Week7HW
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug
+CMAKE_BINARY_DIR = F:\Clionprojectsnew\Week7HW\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Week7HW.dir/depend.make
@@ -67,42 +67,42 @@ include CMakeFiles/Week7HW.dir/flags.make
 
 CMakeFiles/Week7HW.dir/main.cpp.obj: CMakeFiles/Week7HW.dir/flags.make
 CMakeFiles/Week7HW.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Week7HW.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Week7HW.dir\main.cpp.obj -c C:\Users\GooseMane\CLionProjects\Week7HW\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Clionprojectsnew\Week7HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Week7HW.dir/main.cpp.obj"
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Week7HW.dir\main.cpp.obj -c F:\Clionprojectsnew\Week7HW\main.cpp
 
 CMakeFiles/Week7HW.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Week7HW.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\GooseMane\CLionProjects\Week7HW\main.cpp > CMakeFiles\Week7HW.dir\main.cpp.i
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Clionprojectsnew\Week7HW\main.cpp > CMakeFiles\Week7HW.dir\main.cpp.i
 
 CMakeFiles/Week7HW.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Week7HW.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\GooseMane\CLionProjects\Week7HW\main.cpp -o CMakeFiles\Week7HW.dir\main.cpp.s
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Clionprojectsnew\Week7HW\main.cpp -o CMakeFiles\Week7HW.dir\main.cpp.s
 
 CMakeFiles/Week7HW.dir/Player.cpp.obj: CMakeFiles/Week7HW.dir/flags.make
 CMakeFiles/Week7HW.dir/Player.cpp.obj: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Week7HW.dir/Player.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Week7HW.dir\Player.cpp.obj -c C:\Users\GooseMane\CLionProjects\Week7HW\Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Clionprojectsnew\Week7HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Week7HW.dir/Player.cpp.obj"
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Week7HW.dir\Player.cpp.obj -c F:\Clionprojectsnew\Week7HW\Player.cpp
 
 CMakeFiles/Week7HW.dir/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Week7HW.dir/Player.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\GooseMane\CLionProjects\Week7HW\Player.cpp > CMakeFiles\Week7HW.dir\Player.cpp.i
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Clionprojectsnew\Week7HW\Player.cpp > CMakeFiles\Week7HW.dir\Player.cpp.i
 
 CMakeFiles/Week7HW.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Week7HW.dir/Player.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\GooseMane\CLionProjects\Week7HW\Player.cpp -o CMakeFiles\Week7HW.dir\Player.cpp.s
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Clionprojectsnew\Week7HW\Player.cpp -o CMakeFiles\Week7HW.dir\Player.cpp.s
 
 CMakeFiles/Week7HW.dir/Game.cpp.obj: CMakeFiles/Week7HW.dir/flags.make
 CMakeFiles/Week7HW.dir/Game.cpp.obj: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Week7HW.dir/Game.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Week7HW.dir\Game.cpp.obj -c C:\Users\GooseMane\CLionProjects\Week7HW\Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Clionprojectsnew\Week7HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Week7HW.dir/Game.cpp.obj"
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Week7HW.dir\Game.cpp.obj -c F:\Clionprojectsnew\Week7HW\Game.cpp
 
 CMakeFiles/Week7HW.dir/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Week7HW.dir/Game.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\GooseMane\CLionProjects\Week7HW\Game.cpp > CMakeFiles\Week7HW.dir\Game.cpp.i
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Clionprojectsnew\Week7HW\Game.cpp > CMakeFiles\Week7HW.dir\Game.cpp.i
 
 CMakeFiles/Week7HW.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Week7HW.dir/Game.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\GooseMane\CLionProjects\Week7HW\Game.cpp -o CMakeFiles\Week7HW.dir\Game.cpp.s
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Clionprojectsnew\Week7HW\Game.cpp -o CMakeFiles\Week7HW.dir\Game.cpp.s
 
 # Object files for target Week7HW
 Week7HW_OBJECTS = \
@@ -120,7 +120,7 @@ Week7HW.exe: CMakeFiles/Week7HW.dir/build.make
 Week7HW.exe: CMakeFiles/Week7HW.dir/linklibs.rsp
 Week7HW.exe: CMakeFiles/Week7HW.dir/objects1.rsp
 Week7HW.exe: CMakeFiles/Week7HW.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Week7HW.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:\Clionprojectsnew\Week7HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Week7HW.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Week7HW.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -132,6 +132,6 @@ CMakeFiles/Week7HW.dir/clean:
 .PHONY : CMakeFiles/Week7HW.dir/clean
 
 CMakeFiles/Week7HW.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\GooseMane\CLionProjects\Week7HW C:\Users\GooseMane\CLionProjects\Week7HW C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug C:\Users\GooseMane\CLionProjects\Week7HW\cmake-build-debug\CMakeFiles\Week7HW.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" F:\Clionprojectsnew\Week7HW F:\Clionprojectsnew\Week7HW F:\Clionprojectsnew\Week7HW\cmake-build-debug F:\Clionprojectsnew\Week7HW\cmake-build-debug F:\Clionprojectsnew\Week7HW\cmake-build-debug\CMakeFiles\Week7HW.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Week7HW.dir/depend
 

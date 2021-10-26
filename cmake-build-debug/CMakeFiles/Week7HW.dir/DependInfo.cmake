@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/GooseMane/CLionProjects/Week7HW/Game.cpp" "C:/Users/GooseMane/CLionProjects/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir/Game.cpp.obj"
-  "C:/Users/GooseMane/CLionProjects/Week7HW/Player.cpp" "C:/Users/GooseMane/CLionProjects/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir/Player.cpp.obj"
-  "C:/Users/GooseMane/CLionProjects/Week7HW/main.cpp" "C:/Users/GooseMane/CLionProjects/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir/main.cpp.obj"
+  "F:/Clionprojectsnew/Week7HW/Game.cpp" "F:/Clionprojectsnew/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir/Game.cpp.obj"
+  "F:/Clionprojectsnew/Week7HW/Player.cpp" "F:/Clionprojectsnew/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir/Player.cpp.obj"
+  "F:/Clionprojectsnew/Week7HW/main.cpp" "F:/Clionprojectsnew/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

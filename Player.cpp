@@ -4,7 +4,7 @@ void Player::won(){
     Player::score++; //increment the score
 }
 
-const string &Player::getName() const {
+const string &Player::getName(){
     return name;
 }
 

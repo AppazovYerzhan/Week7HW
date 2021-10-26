@@ -1,5 +1,7 @@
 #include <string>
-#include "iostream"
+#include <iostream>
+#include <cstdlib>
+#include "ctime"
 
 using namespace std;
 
@@ -17,12 +19,13 @@ public:
 
     void won();
 
-    const string &getName() const;  //Getters
+    const string &getName();  //Getters
     int getScore() const;
 
     void setName(const string &name);   //Setters
     void setScore(int score);
 
+    void displayBoard();
 };
 
 

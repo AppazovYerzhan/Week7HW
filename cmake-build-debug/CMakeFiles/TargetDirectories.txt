@@ -1,3 +1,3 @@
-C:/Users/GooseMane/CLionProjects/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir
-C:/Users/GooseMane/CLionProjects/Week7HW/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/GooseMane/CLionProjects/Week7HW/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+F:/Clionprojectsnew/Week7HW/cmake-build-debug/CMakeFiles/Week7HW.dir
+F:/Clionprojectsnew/Week7HW/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/Clionprojectsnew/Week7HW/cmake-build-debug/CMakeFiles/rebuild_cache.dir
